@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="icon" href="..//Imagem/rainbow.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/contato.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <script src="../js/contato.js"></script>
+
+</head>
+
+<body>
+    <div class="body">
+
+        <header class="cabeca">
+
+           <h1> CONTATO</h1>
+
+            <nav style="display: inline-block; margin-block-end: 45px;">
+                <a class="link_menu" href="../HTML/Main.html" target="_blank">LGBTQIAP+ & M.T</a>
+
+
+                <a class="link_menu" href="../HTML/Contato.html" target="_blank">Contato</a>
+
+                <a class="link_menu" href="../HTML/Nos.html" target="_blank">Quem Somos</a>
+
+                <a class="link_menu" href="../HTML/Integração.html" target="_blank">Apresentação</a>
+
+            </nav>
+           
+        </header>
+        <main>
+
+            <form id="formContato" action="arquivoqueRecebeberáosDados.php" method="POST" onsubmit="return v();">
+
+                <div class="mensagem" style="color: red;"><span id="msgErro"></span> </div>
+
+                <label for="nomesobrenome"> Nome e Sobrenome </label>
+
+                <input class="input_padrao" type="text" id="nomesobrenome" name="nomesobrenome" maxlength="25"
+                    placeholder="nome e último sobrenome" />
+
+                <label for="email">Email </label>
+
+                <input class="input_padrao" type="email" id="email" name="email" placeholder="emailseu@dominio.com" />
+
+                <label for="telefone">Telefone </label>
+
+                <input class="input_padrao" type="tel" ID="telefone" width="100%" placeholder="(XX) XXXXX-XXXX" />
+
+                <label for="mensagem">Mensagem</label>
+
+                <textarea class="input_padrao" cols="25" rows="8" id="mensagem"> </textarea>
+
+                <br>
+                <br>
+                <!--
+    TAG --- 1
+    CLASSE --- 10
+    ID -- 100
+    INLINE -- 1000
+-->
+                <input type="submit" value="Enviar " class="enviar">
+            </form>
+
+        </main>
+
+
+        <footer class="roda">
+            &copy; Lukyan Sigarini de Paiva, Bernardo Fernandez & Henrique H. Fujikawa / 2021 "Homofobia, racismo e o
+            sexismo são transtornos de
+            personalidades intolerantes."
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>
